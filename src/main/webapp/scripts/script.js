@@ -13,7 +13,7 @@
                 user = data.user;
                 site = data.site;
                 if (user) {
-                    $("#loginStatus").show().html("<p>You are logged in as " + user + " by " + site + "</p>");
+                    $("#loginStatus").show().html("<p>You are logged in as <code>" + user + "</code> by <em>" + site + "</em></p>");
                     $("#loggedIn").show();
                     $("#loggedOut").hide();
                 } else {

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Lid Demo Home</title>
+    <title>About Lid Demo</title>
 <#include "inc/head.ftl">
 </head>
 <body class="cilogi-info">
