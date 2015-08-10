@@ -1,5 +1,5 @@
 sourceRoot: ../ftl
-sources: [index.ftl, login.ftl]
+sources: [index.ftl, login.ftl, about.ftl]
 replaceExtensions: [ftl,html, fjs, js]
 data: {
     tdd(data/const.tdd)

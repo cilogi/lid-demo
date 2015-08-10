@@ -2,10 +2,34 @@
 <html lang="en">
 <head>
     <title>About Lid Demo</title>
-<#include "inc/head.ftl">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link href="styles/bootstrap-social.css" rel="stylesheet">
+<link href="styles/material.css" rel="stylesheet">
+<link href="styles/style.css" rel="stylesheet">
 </head>
 <body class="cilogi-info">
-<#include "inc/navbar.ftl">
+
+<nav class="navbar navbar-fixed-top panel">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      <a class="navbar-brand" href="/index.html">Cilogi</a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/login.html">Login</a></li>
+            <li><a href="/auth.ftl">Auth</a></li>
+          <li><a href="/about.html">About</a></li>
+        </ul>
+    </div>
+</nav>
 <div class="container" style="margin-top:10px; font-size:15px;">
     <div style="padding: 0.25em" class="cilogi-title">
         <h1 class="cilogi-title">About Lightweight Identity</h1>
@@ -38,6 +62,7 @@
     </section>
 </div>
 <!-- container -->
-<#include "inc/foot.ftl">
-</body>
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="scripts/script.js"></script></body>
 </html>

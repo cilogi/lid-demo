@@ -13,7 +13,7 @@
     <hr class="soften">
     <section>
         <div class="row">
-            <div id="loggedIn">
+            <div id="loggedIn" style="display:none">
                 <p>You are logged in!</p>
 
                 <p><a class="btn btn-default" href="/index.html">Home</a></p>
