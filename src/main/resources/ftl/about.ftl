@@ -31,8 +31,8 @@
                    So, there is no question of us having a security breach and its light on resources.</p>
                 <h2>How to use it</h2>
                 <p>There is a demo <a href="http://cilogi-liddemo.appspot.com/">here</a>, running on App Engine.</p>
-                <p>At present the code can be found in two Github projects.  The library, which is all you need to start,
-                   is <a href="https://github.com/cilogi/lid">https://github.com/cilogi/lid</a></p>
+                <p>The code to this demo can be <a href="https://github.com/cilogi/lid-demo">found on Github</a>.</p>
+                <p>There is a more setup information and discussion on the library site at <a href="https://github.com/cilogi/lid">Github</a></p>
             </div>
         </div>
     </section>
