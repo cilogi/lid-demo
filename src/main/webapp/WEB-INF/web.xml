@@ -32,6 +32,17 @@
         </auth-constraint>
     </security-constraint>
 
+    <security-constraint>
+          <web-resource-collection>
+              <web-resource-name>protected</web-resource-name>
+              <url-pattern>*.html</url-pattern>
+              <url-pattern>/scripts/*</url-pattern>
+              <url-pattern>/styles/*</url-pattern>
+          </web-resource-collection>
+          <user-data-constraint>
+              <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+          </user-data-constraint>
+     </security-constraint>
 
     <context-param>
         <!-- Don't want jsessionid written into URL on dev server, as it causes trouble) -->
