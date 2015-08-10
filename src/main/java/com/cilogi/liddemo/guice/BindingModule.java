@@ -22,6 +22,8 @@
 package com.cilogi.liddemo.guice;
 
 
+import com.cilogi.lid.util.ISendEmail;
+import com.cilogi.lid.util.SendLoginEmail;
 import com.google.apphosting.utils.servlet.SessionCleanupServlet;
 import com.google.inject.AbstractModule;
 import com.google.inject.Scopes;
