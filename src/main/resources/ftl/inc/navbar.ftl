@@ -12,7 +12,7 @@
     <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav">
           <li><a href="/index.html">Home</a></li>
-          <li><a href="/login.html">Login</a></li>
+          <li><a href="/login.html">Sign in</a></li>
             <li><a href="/auth.ftl">Auth</a></li>
           <li><a href="/about.html">About</a></li>
         </ul>

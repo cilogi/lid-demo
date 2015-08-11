@@ -14,12 +14,12 @@
     <section>
         <div class="row">
             <div class="col-md-6 col-sm-8">
-                <div id="loggedIn" style="display:none">
-                    <p>You are logged in!</p>
+                <div class="loggedIn" style="display:none">
+                    <p>You are signed in!</p>
                     <p><a class="btn btn-default" href="/index.html">Home</a></p>
                 </div>
 
-                <div id="loggedOut" style="display:none">
+                <div class="loggedOut" style="display:none">
                     <form class="login-form" method="POST" action="/login/google">
                         <div class="form-group">
                             <button type="submit" class="btn btn-block btn-social btn-google">
@@ -41,7 +41,7 @@
                             </button>
                             <input type="text" name="email" id="email" class="form-control" placeholder="Enter Email Address"
                                    style="padding-bottom:5px; padding-top:1px; width:200px;  display: inline-block;">
-                            <span id="emailResponse"></span>
+                            <span id="emailResponse" style="display:block"></span>
                         </div>
                     </form>
                 </div>
@@ -49,8 +49,8 @@
         </div>
     </section>
     <section>
-        <div class="row">
-            <div class="col-md-6 col-sm-8">
+        <div class="loggedOut" class="row">
+            <div class="col-md-6 col-sm-8" style="display:none;">
                 <p>To sign in with Email please enter your email address and press the <code>Sign in with Email</code>
                    button.  An email will be send to the address you provide.  When you
                    receive the Email, click the link it provides and you'll be signed in and brought back to this
@@ -60,7 +60,6 @@
         </div>
     </section>
 </div>
-
 <#include "inc/foot.ftl">
 </body>
 </html>

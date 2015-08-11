@@ -14,13 +14,13 @@
                 name = data.name;
                 site = data.site;
                 if (id) {
-                    $("#loginStatus").show().html("<p>You are logged in as <code>" + name + "</code> by <em>" + site + "</em></p>");
-                    $("#loggedIn").show();
-                    $("#loggedOut").hide();
+                    $("#loginStatus").show().html("<p>You are signed in as <code>" + name + "</code> by <em>" + site + "</em></p>");
+                    $(".loggedIn").show();
+                    $(".loggedOut").hide();
                 } else {
-                    $("#loginStatus").show().html("<p>You are not logged in</p>");
-                    $("#loggedIn").hide();
-                    $("#loggedOut").show();
+                    $("#loginStatus").show().html("<p>You are not signed in</p>");
+                    $(".loggedIn").hide();
+                    $(".loggedOut").show();
                 }
             },
             error: function(jqXHR, status, error) {
