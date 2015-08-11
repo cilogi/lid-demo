@@ -6,55 +6,57 @@
 </head>
 <body class="cilogi-info">
 <#include "inc/navbar.ftl">
-<div class="container" style="margin-top:10px; font-size:15px;">
+<div class="container-fluid" style="margin-top:10px; font-size:15px;">
     <div style="padding: 0.25em" class="cilogi-title">
         <h1 class="cilogi-title">Login</h1>
     </div>
     <hr class="soften">
     <section>
         <div class="row">
-            <div id="loggedIn" style="display:none">
-                <p>You are logged in!</p>
+            <div class="col-md-6 col-sm-8">
+                <div id="loggedIn" style="display:none">
+                    <p>You are logged in!</p>
+                    <p><a class="btn btn-default" href="/index.html">Home</a></p>
+                </div>
 
-                <p><a class="btn btn-default" href="/index.html">Home</a></p>
-            </div>
-
-            <div id="loggedOut" style="display:none">
-                <form class="login-form" method="POST" action="/login/google">
-                    <div>
-                        <button type="submit" class="btn btn-block btn-social btn-google">
-                            <i class="fa fa-google"></i> Sign in with Google
-                        </button>
-                    </div>
-                </form>
-                <form class="login-form" method="POST" action="/login/facebook">
-                    <div>
-                        <button type="submit" class="btn btn-block btn-social btn-facebook">
-                            <i class="fa fa-facebook"></i> Sign in with Facebook
-                          </button>
-                    </div>
-                </form>
-                <form id="loginByEmail" class="login-form" method="POST" action="/login/email">
-                     <div>
-                         <button type=submit class="btn btn-social btn-openid">
-                             <i class="fa fa-sign-in"></i> Sign in with Email
-                         </button>
-                         <label for="email">Email</label>
-                         <input type="text" name="email" id="email" style="padding-bottom:5px; padding-top:1px; width:200px;">
-                         <span id="emailResponse"></span>
-                     </div>
-                 </form>
+                <div id="loggedOut" style="display:none">
+                    <form class="login-form" method="POST" action="/login/google">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-block btn-social btn-google">
+                                <i class="fa fa-google"></i> Sign in with Google
+                            </button>
+                        </div>
+                    </form>
+                    <form class="login-form" method="POST" action="/login/facebook" style="margin-bottom: -10px;">
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-block btn-social btn-facebook">
+                                <i class="fa fa-facebook"></i> Sign in with Facebook
+                            </button>
+                        </div>
+                    </form>
+                    <form id="loginByEmail" class="login-form form-inline" method="POST" action="/login/email">
+                        <div class="form-group">
+                            <button type=submit class="btn btn-social btn-openid" style="margin-top: 10px;">
+                                <i class="fa fa-sign-in"></i> Sign in with Email
+                            </button>
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Email Address"
+                                   style="padding-bottom:5px; padding-top:1px; width:200px; margin-top: 10px; display: inline-block;">
+                            <span id="emailResponse"></span>
+                        </div>
+                    </form>
+                </div>
             </div>
         </div>
+    </section>
+    <section>
         <div class="row">
-            <div class="col-md-6" style="margin-top: 20px; padding-left: 0;">
-                <p>Although you don't need to remember a password there is no guarantee that if you
-                   choose a different login method next time you'll go the right account since Facebook
-                   does not always give us an Email address to use as your id; or you may have more
-                   than one Email address and then forget which one you used..</p>
-                <p>If you do forget what identity you used to login we can't help.  Our emphasis on
-                   your privacy, and the fact that we don't store any information other than your id, means
-                   that you'll just have to try and remember the ID you used!</p>
+            <div class="col-md-6 col-sm-8">
+                <p>Please enter you email address and then press the <code>Sign in with Email</code>
+                   button.  An email will then be send to the address you provide.  When you
+                   receive the Email click on the link it provides and you'll be brought back to this
+                   site, signed in.  A cookie will be set which will
+                   keep you signed in for 30 days unless you sign out, or clean up your browser cookies.
+                </p>
             </div>
         </div>
     </section>

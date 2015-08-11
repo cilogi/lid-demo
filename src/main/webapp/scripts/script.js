@@ -41,14 +41,14 @@
                 dataType: "json",
                 success: function(data) {
                     var msg = data.message;
-                    $("#emailResponse").html(msg);
+                    $("#emailResponse").css("color", "black").html(msg);
                 },
                 error: function(jqXHR, status, error) {
                     var json = jqXHR.responseJSON;
                     if (json) {
-                        $("#emailResponse").html(json.message);
+                        $("#emailResponse").css("color", "red").html(json.message);
                     } else {
-                        $("#emailResponse").html("status: " + status + " error: " + error);
+                        $("#emailResponse").css("color", "red").html("status: " + status + " error: " + error);
                     }
                 }
             })
