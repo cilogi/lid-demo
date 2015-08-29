@@ -22,6 +22,8 @@
 package com.cilogi.liddemo.guice;
 
 
+import com.cilogi.lid.servlet.login.DefaultLoginAction;
+import com.cilogi.lid.servlet.login.ILoginAction;
 import com.cilogi.lid.util.ISendEmail;
 import com.cilogi.lid.util.SendLoginEmail;
 import com.google.apphosting.utils.servlet.SessionCleanupServlet;
@@ -43,5 +45,7 @@ public class BindingModule extends AbstractModule {
     protected void configure() {
         bind(FreemarkerServlet.class).in(Scopes.SINGLETON);
         bind(SessionCleanupServlet.class).in(Scopes.SINGLETON);
+        bind(ILoginAction.class).to(DefaultLoginAction.class);
+
     }
 }
